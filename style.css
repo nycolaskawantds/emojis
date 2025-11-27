@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-color: yellow;
+}
+
+.feedback-container {
+    background-color: aliceblue;
+    width: 60%;
+    height: 200px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0,3);
+    border-radius: 10px;
+    position: relative;
+}
+
+.emoji-container {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+}
+
+.emoji-strip {
+    display: flex;
+    transition: none;
+}
+
+.emoji-strip i {
+    min-width: 60px;
+    margin: 0;
+}
+
+.fa-solid.fa-face-angry {
+    margin: 1px;
+}
+
+.fa-solid{
+    margin: 3px;
+    transform: translateX(0);
+}
+
+.fa-star{
+    color: lightcyan;
+    cursor: pointer;
+}
+
+.fa-star.active{
+    color: gold;
+}
+
+.painel-votacao{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20%;
+}
